@@ -3,7 +3,7 @@ import pandas as pd
 
 st.title('Heart Disease Predictor')
 
-st.info('This is a predictive AI application')
+st.info('INFS122 Semester project:predictive AI application')
 
 with st.expander("Data"):
   st.write('**Raw data**')
@@ -17,6 +17,9 @@ with st.expander("Data"):
 
   st.write('**Y(target variable)**')
   Y = df.chd
+
+  with st.sidebar:
+    st.header("Patient health data")
   Y
 
 with st.expander("Data Visualization"):
