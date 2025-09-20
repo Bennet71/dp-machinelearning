@@ -17,11 +17,14 @@ with st.expander("Data"):
 
   st.write('**Y(target variable)**')
   Y = df.chd
-
-  with st.sidebar:
-    st.header("Patient health data")
   Y
 
 with st.expander("Data Visualization"):
   st.scatter_chart(data=df, x='age', y='tobacco', color='chd')
+
+#User input
+with st.sidebar:
+    st.header("Patient health data")
+    Family history = st.selectbox('0', '1')
+    
 
