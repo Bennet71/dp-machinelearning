@@ -10,6 +10,7 @@ with st.expander("Data"):
   df = pd.read_csv('SAHeart.csv')
   df.famhist = [1 if value == "Present" else 0 for value in df.famhist]
   df
+  df.info
   
   st.write('**X(Input variables)**')
   X = df.drop('chd', axis=1)
@@ -26,5 +27,6 @@ with st.expander("Data Visualization"):
 with st.sidebar:
     st.header("Patient health data")
     famhist = st.selectbox('**Family history**', ('Present', 'Absent'))
+    
     
 
