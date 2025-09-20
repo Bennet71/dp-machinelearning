@@ -28,7 +28,8 @@ with st.sidebar:
     famhist = st.selectbox('**Family history**', ('Present', 'Absent'))
     sbp = st.slider('**Systolic blood pressure**', 100, 250, 175)
     tobacco = st.slider('**cumulative tobacco(kg)**', 0.0, 32.20, 16.1)
-    
+    idl = st.slider('**Colestorel level**', 0.98, 14.16, 7.57)
+    adiposity = st.slider('**Severe overweight (numeric vector)**', 6.74, 42.17, 24.45 )
     
     
 
