@@ -1,5 +1,5 @@
 import streamlit as st
 
-st.title('🎈 App Name')
+st.title('Heart Disease Predictor')
 
-st.write('Hello world!')
+st.ifo('This is a predictive AI application')
