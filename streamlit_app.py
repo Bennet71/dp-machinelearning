@@ -27,6 +27,7 @@ with st.sidebar:
     st.header("Patient health data")
     famhist = st.selectbox('**Family history**', ('Present', 'Absent'))
     sbp = st.slider('**Systolic blood pressure**', 100, 250, 175)
+    tobacco = st.slider('**cumulative tobacco(kg)', 0, 32.20, 16.1)
     
     
 
