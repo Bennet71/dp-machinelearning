@@ -5,5 +5,7 @@ st.title('Heart Disease Predictor')
 
 st.info('This is a predictive AI application')
 
-df = pd.read_csv('SAHeart.csv')
-df
+with st.expander("Data"):
+  st.write('**Raw data**')
+  df = pd.read_csv('SAHeart.csv')
+  df
