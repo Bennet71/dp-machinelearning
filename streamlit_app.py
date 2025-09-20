@@ -9,3 +9,12 @@ with st.expander("Data"):
   st.write('**Raw data**')
   df = pd.read_csv('SAHeart.csv')
   df
+  
+  st.write('**X**')
+  X = df
+  X
+
+  st.write('**Y**')
+  Y = df.chd
+  Y
+
