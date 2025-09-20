@@ -19,3 +19,6 @@ with st.expander("Data"):
   Y = df.chd
   Y
 
+with st.expander("Data Visualization"):
+  st.scatter_charts(data=df, x='age', y='tobacco', color="chd")
+
