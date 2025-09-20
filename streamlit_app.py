@@ -10,11 +10,11 @@ with st.expander("Data"):
   df = pd.read_csv('SAHeart.csv')
   df
   
-  st.write('**X**')
+  st.write('**X(Input variables)**')
   X = df.drop('chd', axis=1)
   X
 
-  st.write('**Y**')
+  st.write('**Y(target variable)**')
   Y = df.chd
   Y
 
