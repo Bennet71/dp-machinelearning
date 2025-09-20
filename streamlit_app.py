@@ -25,6 +25,6 @@ with st.expander("Data Visualization"):
 #User input
 with st.sidebar:
     st.header("Patient health data")
-    Family_history = st.selectbox('0', '1')
+    famhist = st.selectbox('Family history', ('Present', 'Absent'))
     
 
