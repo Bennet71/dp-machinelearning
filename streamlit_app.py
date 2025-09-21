@@ -58,7 +58,7 @@ with st.expander('input features'):
 #encode x
 encode = ['famhist']
 df_patient = pd.get_dummies(input_data, prefix=encode)
-df_patient[:1]
+input_row = df_patient[:1]
 
 #Encode Y
 target_mapper = {'Positive': 1,
@@ -67,7 +67,14 @@ def target_encode(val):
   return target_mapper[val]
 
 y = Y_raw.apply(target_encode)
-y
+
+
+with st.expander("Data Preparation"):
+  st.write('**Encoded X input**')
+  input_row
+  st.write('**Encoded Y')
+  y
+
 
  
 
