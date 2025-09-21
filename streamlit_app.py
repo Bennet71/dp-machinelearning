@@ -112,7 +112,7 @@ st.dataframe(df_prediction_proba,
                 max_value=1
               ),
             },hide_index=True)
-df_prediction_proba
+#df_prediction_proba
 patient_diagnosis = np.array(['Negaive diagnosis', 'Positive diagnosis'])
 st.success(str(patient_diagnosis[prediction][0]))
 
