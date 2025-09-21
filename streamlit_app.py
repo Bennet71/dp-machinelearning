@@ -45,7 +45,7 @@ with st.sidebar:
             'Obesity': Obesity,
             'Alcohol consumption': alcohol,
             'Age': age}
-    input_df = pd.DataFrame(data, index[0])
+    input_df = pd.DataFrame(data, index=[0])
     input_data = pd.concat([input_df, X], axis=0)
   
 input_df
