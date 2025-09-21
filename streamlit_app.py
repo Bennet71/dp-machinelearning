@@ -35,7 +35,7 @@ with st.sidebar:
     age = st.slider('**Age**', 18, 65, 42)
 
     #Creating a data frame for the input features.
-    data = {'Systolic blood pressure': sbp,
+    data = {'sbp': sbp,
             'cumulative tobacco(kg)': tobacco,
             'Colestorel level': idl,
             'Severe overweight (numeric vector)': adiposity,
