@@ -78,7 +78,7 @@ with st.expander("Data Preparation"):
 
 #Model training and inference
 #training the ML model
-clf = RandonForestClassifier()
+clf = RandomForestClassifier()
 clf.fit(X_raw, y)
 
 #Apply the model to make predictions
