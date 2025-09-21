@@ -1,4 +1,5 @@
 import streamlit as st
+import numpy as np
 import pandas as pd
 from sklearn.ensemble import RandomForestClassifier
 
@@ -90,8 +91,12 @@ df_prediction_proba = pd.DataFrame(prediction_proba)
 df_prediction_proba.columns = ["Negative diagnosis", "Positive diagnosis"]
 df_prediction_proba.rename(columns={0: 'Negative diagnosis',
                                    1: 'Positive diagnosis'})
-df_prediction_proba
- 
+#df_prediction_proba
+
+#Display predicted diagnosis
+st.subheader('Predicted diagnosis')
+patient_diagnosis = np.array(['Negaive diagnosis', 'Positive diagnosis'])
+st.success(str(patient_diagnosis[prediction][0]))
 
 
 
