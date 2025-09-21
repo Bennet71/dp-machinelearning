@@ -59,7 +59,7 @@ with st.expander('input features'):
 #encode x
 encode = ['famhist']
 df_patient = pd.get_dummies(input_data, prefix=encode)
-x = df_pantient[1:]
+x = df_patient[1:]
 input_row = df_patient[:1]
 
 #Encode Y
