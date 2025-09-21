@@ -39,7 +39,7 @@ with st.sidebar:
             'cumulative tobacco(kg)': tobacco,
             'Colestorel level': idl,
             'Severe overweight (numeric vector)': adiposity,
-            'Family history of heart disease': famhist,
+            'famhist': famhist,
             'Type-A behaviour': typea,
             'Obesity': Obesity,
             'Alcohol consumption': alcohol,
