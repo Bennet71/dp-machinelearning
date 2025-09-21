@@ -37,14 +37,14 @@ with st.sidebar:
 
     #Creating a data frame for the input features.
     data = {'Systolic blood pressure', sbp,
-           'cumulative tobacco(kg)', tobacco,
-           'Colestorel level', idl,
-           'Severe overweight (numeric vector)', adiposity,
-           'Family history of heart disease', famhist,
-           'Type-A behaviour', typea,
-           'Obesity', Obesity,
-           'Alcohol consumption', alcohol,
-           'Age', age}
+            'cumulative tobacco(kg)', tobacco,
+            'Colestorel level', idl,
+            'Severe overweight (numeric vector)', adiposity,
+            'Family history of heart disease', famhist,
+            'Type-A behaviour', typea,
+            'Obesity', Obesity,
+            'Alcohol consumption', alcohol,
+            'Age', age}
     input_df = pd.DataFrame(data, index[0])
   input_df
 
