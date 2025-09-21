@@ -85,7 +85,8 @@ clf.fit(x, y)
 #Apply the model to make predictions
 prediction = clf.predict(input_row)
 prediction_proba = clf.predict_proba(input_row)
-prediction_proba
+
+prediction_proba.columns = ['Negative diagnosis', 'Positive diagnosis']
 
 
  
