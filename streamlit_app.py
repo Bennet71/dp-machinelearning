@@ -56,7 +56,7 @@ with st.expander('input features'):
 #encode
 encode = ['famhist']
 df_patient = pd.get_dummies(input_data, prefix=encode)
-df_patient
+df_patient[:1]
 
   
 
