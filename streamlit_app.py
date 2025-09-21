@@ -36,14 +36,14 @@ with st.sidebar:
 
     #Creating a data frame for the input features.
     data = {'sbp': sbp,
-            'cumulative tobacco(kg)': tobacco,
-            'Colestorel level': idl,
-            'Severe overweight (numeric vector)': adiposity,
+            'tobacco': tobacco,
+            'idl': idl,
+            'adiposity': adiposity,
             'famhist': famhist,
-            'Type-A behaviour': typea,
+            'typea': typea,
             'Obesity': Obesity,
-            'Alcohol consumption': alcohol,
-            'Age': age}
+            'alcohol': alcohol,
+            'age': age}
     input_df = pd.DataFrame(data, index=[0])
     input_data = pd.concat([input_df, X], axis=0)
 
