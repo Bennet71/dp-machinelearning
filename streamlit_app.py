@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+from sklearn.ensemble import RandomForestClassifier
 
 st.title('Heart Disease Predictor')
 
@@ -74,6 +75,15 @@ with st.expander("Data Preparation"):
   input_row
   st.write('**Encoded Y**')
   y
+
+#Model training and inference
+#training the ML model
+clf = RandonForestClassifier()
+clf.fit(X_raw, y)
+
+#Apply the model to make predictions
+prediction = clf.predict(input_row)
+prediction_proba = clf.prediction_proba(input_row)
 
 
  
