@@ -41,7 +41,7 @@ with st.sidebar:
             'adiposity': adiposity,
             'famhist': famhist,
             'typea': typea,
-            'Obesity': Obesity,
+            'obesity': obesity,
             'alcohol': alcohol,
             'age': age}
     input_df = pd.DataFrame(data, index=[0])
