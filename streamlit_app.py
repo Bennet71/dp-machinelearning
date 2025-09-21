@@ -11,12 +11,12 @@ with st.expander("Data"):
   df
   
   st.write('**X(Input variables)**')
-  X = df.drop('chd', axis=1)
-  X
+  X_raw = df.drop('chd', axis=1)
+  X_raw
 
   st.write('**Y(target variable)**')
-  Y = df.chd
-  Y
+  Y_raw = df.chd
+  Y_raw
 
 with st.expander("Data Visualization"):
   st.scatter_chart(data=df, x='age', y='tobacco', color='chd')
@@ -45,12 +45,20 @@ with st.sidebar:
             'alcohol': alcohol,
             'age': age}
     input_df = pd.DataFrame(data, index=[0])
-    input_data = pd.concat([input_df, X], axis=0)
+    input_data = pd.concat([input_df, X_raw], axis=0)
   
-    #encode
-    encode = ['famhist']
-    df_patient = pd.get_dummies(input_data, prefix=encode)
-    input_row = df_patient[:1]
+#encode
+encode = ['famhist']
+df_patient = pd.get_dummies(input_data, prefix=encode)
+input_row = df_patient[:1]
+
+#Encode Y
+target_mapper = {'1': 1;
+                '0': 0}
+def target_encode(val):
+  return target_mapper[val]
+
+    
   
 with st.expander('input features'):
   st.write('**Input Features**')
