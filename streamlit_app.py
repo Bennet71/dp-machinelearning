@@ -58,7 +58,7 @@ with st.expander('input features'):
   st.write('**Combined patient data**')
   input_data
   st.write('**Encoded input data**')
-  inptut_row
+  input_row
 
 
   
