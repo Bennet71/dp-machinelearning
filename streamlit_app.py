@@ -25,7 +25,7 @@ with st.expander("Data Visualization"):
 #User input
 with st.sidebar:
     st.header("Patient health data")
-    famhist = st.selectbox('**Family history**', ('Present', 'Absent'))
+    famhist = st.selectbox('**Family history of heart disease**', ('Present', 'Absent'))
     sbp = st.slider('**Systolic blood pressure**', 100, 250, 175)
     tobacco = st.slider('**cumulative tobacco(kg)**', 0.0, 32.20, 16.1)
     idl = st.slider('**Colestorel level**', 0.98, 14.16, 7.57)
