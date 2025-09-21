@@ -53,6 +53,11 @@ with st.expander('input features'):
   st.write('**Combined patient data**')
   input_data
 
+#encode
+encode = ['famhist']
+df_patient = pd.get_dummies(input_data, prefix=encode)
+df_patient
+
   
 
 
