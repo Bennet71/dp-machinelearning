@@ -91,7 +91,7 @@ df_prediction_proba = pd.DataFrame(prediction_proba)
 df_prediction_proba.columns = ["Negative diagnosis", "Positive diagnosis"]
 df_prediction_proba.rename(columns={0: 'Negative diagnosis',
                                    1: 'Positive diagnosis'})
-#df_prediction_proba
+df_prediction_proba
 
 #Display predicted diagnosis
 st.subheader('Predicted diagnosis')
