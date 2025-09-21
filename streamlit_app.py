@@ -70,11 +70,6 @@ y = Y_raw.apply(target_encode)
 y
 
  
-with st.expander('input features'):
-  st.write('**Input Features**')
-  input_df
-  st.write('**Combined patient data**')
-  input_data
 
 
 
