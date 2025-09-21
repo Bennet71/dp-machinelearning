@@ -58,6 +58,9 @@ target_mapper = {'1': 1,
 def target_encode(val):
   return target_mapper[val]
 
+Y = Y_raw(target_encode)
+Y
+
     
   
 with st.expander('input features'):
