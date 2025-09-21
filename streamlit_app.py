@@ -26,7 +26,7 @@ with st.sidebar:
     st.header("Patient health data")
     sbp = st.slider('**Systolic blood pressure**', 100, 250, 175)
     tobacco = st.slider('**cumulative tobacco(kg)**', 0.0, 32.20, 16.1)
-    idl = st.slider('**Colestorel level**', 0.98, 14.16, 7.57)
+    ldl = st.slider('**Colestorel level**', 0.98, 14.16, 7.57)
     adiposity = st.slider('**Severe overweight (numeric vector)**', 6.74, 42.17, 24.45 )
     famhist = st.selectbox('**Family history of heart disease**', ('Present', 'Absent'))
     typea = st.slider('**Type-A behaviour**', 13.00, 78.00, 45.50)
@@ -37,7 +37,7 @@ with st.sidebar:
     #Creating a data frame for the input features.
     data = {'sbp': sbp,
             'tobacco': tobacco,
-            'idl': idl,
+            'ldl': ldl,
             'adiposity': adiposity,
             'famhist': famhist,
             'typea': typea,
