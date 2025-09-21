@@ -88,6 +88,7 @@ prediction_proba = clf.predict_proba(input_row)
 
 df_prediction_proba = pd.DataFrame(prediction_proba)
 df_prediction_proba.column = ["Negative diagnosis", "Positive diagnosis"]
+df_prediction_proba
 
  
 
