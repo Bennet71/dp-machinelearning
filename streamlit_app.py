@@ -53,8 +53,8 @@ df_patient = pd.get_dummies(input_data, prefix=encode)
 input_row = df_patient[:1]
 
 #Encode Y
-target_mapper = {'1': 1;
-                '0': 0}
+target_mapper = {1: 1;
+                0: 0}
 def target_encode(val):
   return target_mapper[val]
 
