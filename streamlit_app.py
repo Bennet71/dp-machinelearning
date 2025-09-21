@@ -30,6 +30,9 @@ with st.sidebar:
     tobacco = st.slider('**cumulative tobacco(kg)**', 0.0, 32.20, 16.1)
     idl = st.slider('**Colestorel level**', 0.98, 14.16, 7.57)
     adiposity = st.slider('**Severe overweight (numeric vector)**', 6.74, 42.17, 24.45 )
-    
+    typea = st.slider('**Type-A behaviour**', 13.00, 78.00, 45.50)
+    Obesity = st.slider('**Obesity**', 14.7, 46.58, 30.64)
+    alcohol = st.slider('**Alcohol consumption**', 0.00, 147.19, 73.56)
+    age = st.slider('**Age**', 18, 65, 42)
     
 
