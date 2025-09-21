@@ -8,6 +8,7 @@ st.info('INFS122 Semester project:predictive AI application')
 with st.expander("Data"):
   st.write('**Raw data**')
   df = pd.read_csv('SAHeart.csv')
+  df.chd = ['Positive' if value == 1 else 'Negative' for value in df.chd]
   df
   
   st.write('**X(Input variables)**')
@@ -53,8 +54,8 @@ df_patient = pd.get_dummies(input_data, prefix=encode)
 df_patient[:1]
 
 #Encode Y
-target_mapper = {'1': 1,
-                '0': 0}
+target_mapper = {'Positive': 1,
+                'Negative': 0}
 def target_encode(val):
   return target_mapper[val]
 
