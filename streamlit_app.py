@@ -47,7 +47,14 @@ with st.sidebar:
             'age': age}
     input_df = pd.DataFrame(data, index=[0])
     input_data = pd.concat([input_df, X_raw], axis=0)
+
+with st.expander('input features'):
+  st.write('**Input Features**')
+  input_df
+  st.write('**Combined patient data**')
+  input_data
   
+#Data Preparation
 #encode x
 encode = ['famhist']
 df_patient = pd.get_dummies(input_data, prefix=encode)
