@@ -36,16 +36,17 @@ with st.sidebar:
     age = st.slider('**Age**', 18, 65, 42)
 
     #Creating a data frame for the input features.
-    data = {'Systolic blood pressure', sbp,
-            'cumulative tobacco(kg)', tobacco,
-            'Colestorel level', idl,
-            'Severe overweight (numeric vector)', adiposity,
-            'Family history of heart disease', famhist,
-            'Type-A behaviour', typea,
-            'Obesity', Obesity,
-            'Alcohol consumption', alcohol,
-            'Age', age}
+    data = {'Systolic blood pressure': sbp,
+            'cumulative tobacco(kg)': tobacco,
+            'Colestorel level': idl,
+            'Severe overweight (numeric vector)': adiposity,
+            'Family history of heart disease': famhist,
+            'Type-A behaviour': typea,
+            'Obesity': Obesity,
+            'Alcohol consumption': alcohol,
+            'Age': age}
     input_df = pd.DataFrame(data, index[0])
+    input_data = pd.concat([input_df, X], axis=0)
   
 input_df
 
