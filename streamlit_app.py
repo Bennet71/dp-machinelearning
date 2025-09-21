@@ -95,6 +95,23 @@ df_prediction_proba.rename(columns={0: 'Negative diagnosis',
 
 #Display predicted diagnosis
 st.subheader('Predicted diagnosis')
+st.dataFrame(df_prediction_proba,
+            column_config={
+              'Negative diagnosis': st.column_config.ProgessColumn(
+                'Negative diagnosis',
+                format='%f',
+                width='medium',
+                min_value=0,
+                max_value=1
+              ),
+              'Positive diagnosis': st.column_config.ProgessColumn(
+                'Positive diagnosis',
+                format='%f',
+                width='medium',
+                min_value=0,
+                max_value=1
+              ),
+            },hide_index=True)
 df_prediction_proba
 patient_diagnosis = np.array(['Negaive diagnosis', 'Positive diagnosis'])
 st.success(str(patient_diagnosis[prediction][0]))
