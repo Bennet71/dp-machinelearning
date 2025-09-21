@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+import sklearn.ensemble import RandomForestClassifier
 
 st.title('Heart Disease Predictor')
 
@@ -47,10 +48,10 @@ with st.sidebar:
     input_df = pd.DataFrame(data, index=[0])
     input_data = pd.concat([input_df, X_raw], axis=0)
   
-#encode
+#encode x
 encode = ['famhist']
 df_patient = pd.get_dummies(input_data, prefix=encode)
-input_row = df_patient[:1]
+df_patient[:1]
 
 #Encode Y
 target_mapper = {'1': 1,
@@ -58,18 +59,13 @@ target_mapper = {'1': 1,
 def target_encode(val):
   return target_mapper[val]
 
-y = Y_raw.apply(target_encode)
-y
-
-    
-  
+ 
 with st.expander('input features'):
   st.write('**Input Features**')
   input_df
   st.write('**Combined patient data**')
   input_data
-  st.write('**Encoded input data**')
-  input_row
+
 
 
   
