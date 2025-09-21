@@ -58,8 +58,8 @@ target_mapper = {'1': 1,
 def target_encode(val):
   return target_mapper[val]
 
-Y = Y_raw.apply(target_encode)
-Y
+y = Y_raw.apply(target_encode)
+y
 
     
   
