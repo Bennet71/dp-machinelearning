@@ -8,7 +8,6 @@ st.info('INFS122 Semester project:predictive AI application')
 with st.expander("Data"):
   st.write('**Raw data**')
   df = pd.read_csv('SAHeart.csv')
-  df.famhist = [1 if value == "Present" else 0 for value in df.famhist]
   df
   
   st.write('**X(Input variables)**')
