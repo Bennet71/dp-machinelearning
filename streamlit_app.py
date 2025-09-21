@@ -59,6 +59,7 @@ with st.expander('input features'):
 #encode x
 encode = ['famhist']
 df_patient = pd.get_dummies(input_data, prefix=encode)
+X = df_pantient[1:]
 input_row = df_patient[:1]
 
 #Encode Y
@@ -79,7 +80,7 @@ with st.expander("Data Preparation"):
 #Model training and inference
 #training the ML model
 clf = RandomForestClassifier()
-clf.fit(df_patient, y)
+clf.fit(X, y)
 
 #Apply the model to make predictions
 prediction = clf.predict(input_row)
