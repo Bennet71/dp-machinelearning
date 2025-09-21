@@ -97,15 +97,15 @@ df_prediction_proba.rename(columns={0: 'Negative diagnosis probability',
 st.subheader('Predicted diagnosis')
 st.dataframe(df_prediction_proba,
             column_config={
-              'Negative diagnosis': st.column_config.ProgressColumn(
-                'Negative diagnosis',
+              'Negative diagnosis probability': st.column_config.ProgressColumn(
+                'Negative diagnosis probability',
                 format='%f',
                 width='medium',
                 min_value=0,
                 max_value=1
               ),
-              'Positive diagnosis': st.column_config.ProgressColumn(
-                'Positive diagnosis',
+              'Positive diagnosis probability': st.column_config.ProgressColumn(
+                'Positive diagnosis probability',
                 format='%f',
                 width='medium',
                 min_value=0,
