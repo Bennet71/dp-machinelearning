@@ -95,6 +95,7 @@ df_prediction_proba.rename(columns={0: 'Negative diagnosis probability',
 
 #Display predicted diagnosis
 st.subheader('Predicted diagnosis')
+input_row
 st.dataframe(df_prediction_proba,
             column_config={
               'Negative diagnosis probability': st.column_config.ProgressColumn(
