@@ -107,7 +107,7 @@ st.dataframe(df_prediction_proba,
               ),
             },hide_index=True)
 #df_prediction_proba
-patient_diagnosis = np.array(['Negaive diagnosis', 'Positive diagnosis'])
+patient_diagnosis = np.array(['Low risk of heart disease', 'High risk of heart disease: Referral for further testing is recommended!'])
 st.success(str(patient_diagnosis[prediction][0]))
 
 st.info('Predictive model trained on data sourced from: https://www.kaggle.com/datasets/waalbannyantudre/south-african-heart-disease-dataset?resource=download')
