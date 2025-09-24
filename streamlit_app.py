@@ -23,6 +23,7 @@ with st.expander("Data"):
 
 with st.expander("Data Visualization"):
   st.scatter_chart(data=df, x='age', y='tobacco', color='chd')
+  st.scatter_chart(data=df, x='age', y='obesity', color='chd')
 
 #User input
 with st.sidebar:
