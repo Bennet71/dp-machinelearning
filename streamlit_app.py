@@ -76,7 +76,7 @@ with st.expander("Data Preparation"):
   st.write('**Encoded X input**')
   input_row
   st.write('**Encoded Y**')
-  y
+  
 
 #Model training and inference
 #training the ML model
