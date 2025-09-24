@@ -71,13 +71,6 @@ def target_encode(val):
 
 y = Y_raw.apply(target_encode)
 
-
-with st.expander("Data Preparation"):
-  st.write('**Encoded X input**')
-  input_row
-  st.write('**Encoded Y**')
-  
-
 #Model training and inference
 #training the ML model
 clf = RandomForestClassifier()
