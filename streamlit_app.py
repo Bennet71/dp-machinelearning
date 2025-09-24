@@ -24,6 +24,7 @@ with st.expander("Data"):
 with st.expander("Data Visualization"):
   st.scatter_chart(data=df, x='age', y='tobacco', color='chd')
   st.scatter_chart(data=df, x='age', y='obesity', color='chd')
+  sns.pairplot(df, kind='scatter', plot_kws={'alpha': 0.4})
 
 #User input
 with st.sidebar:
