@@ -1,8 +1,6 @@
 import streamlit as st
 import numpy as np
 import pandas as pd
-import seaborn as sns
-import matplotlib.pyplot as plt
 from sklearn.ensemble import RandomForestClassifier
 
 st.title('Heart Disease Predictor')
@@ -26,10 +24,7 @@ with st.expander("Data"):
 with st.expander("Data Visualization"):
   st.scatter_chart(data=df, x='age', y='tobacco', color='chd')
   st.scatter_chart(data=df, x='age', y='obesity', color='chd')
-  fig = sns.pairplot(df, hue="chd")
-  st.pyplot(fig)
   
-
 #User input
 with st.sidebar:
     st.header("Patient health data")
